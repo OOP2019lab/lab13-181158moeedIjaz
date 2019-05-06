@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+template<typename X>
+X GetMin(X d,X e){
+	if(d<e){
+		return d;
+	}else{
+		return e;
+	}
+}
+template<typename X>
+X GetMax(X a,X b){
+	if(a>b){
+		return a;
+	}else{
+		return b;
+	}
+}
+
+template<typename X,typename Y>
+X GetMin(Y d,X e){
+	if(d<e){
+		return d;
+	}else{
+		return e;
+	}
+}
+
+template<typename Y,typename X>
+Y GetMax(Y a,X b){
+	if(a>b){
+		return a;
+	}else{
+		return b;
+	}
+}
+
+//void main(){
+//	char i='Z';
+//  int  j=6, k;
+//  long l=10, m=5, n;
+//  k=GetMax(i,m);
+//  n=GetMin(j,l);
+//  cout << k << endl;
+//  cout << n << endl;
+//
+//
+//	system("pause");
+//}
